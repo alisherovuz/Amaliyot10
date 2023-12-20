@@ -50,8 +50,73 @@ class Car:
     def get_info(self):
         return f"Modeli: {self.model}\nRangi: {self.color}\nOg'irligi: {self.weight}\nMaksimal tezligi: {self.high_speed}"
 
-car1 = Car("Cobalt","Oq",1200,180)
-print(car1.get_info())
+# car1 = Car("Cobalt","Oq",1200,180)
+# print(car1.get_info())
 
 
 
+#5-masala
+
+import math
+class Circle:
+    def __init__(self,radius,color):
+        self.radius = radius
+        self.color = color
+    def get_color(self):
+        return f"Rangi: {self.color}"
+    def set_color(self):
+        yangi_rang = input("yangi rangni kiriting:  ")
+        self.color = yangi_rang
+        return f"Yangi rang: {self.color}"
+
+    def get_radius(self):
+        return f"Radiusi: {self.radius}"
+
+    def set_radius(self):
+        yangi_radius = input("yangi radiusni kiriting:  ")
+        self.radius = yangi_radius
+        return  f"Yangi radius: {self.radius}"
+
+    def get_area(self):
+        yuza = self.radius ** 2 * 3.14
+        return yuza
+    def get_circumference(self):
+        uzunlik = math.pi
+        return uzunlik * 2 * self.radius
+
+    def get_info(self):
+
+        return f"Rangi: {self.color}\nRadiusi:{self.radius}\n"
+
+
+# circle1 = Circle(5,"ko'k")
+# print(circle1.get_info())
+
+class Recentagle:
+    def __init__(self,height,width):
+        self.height = height
+        self.width = width
+    def get_height(self):
+        return f"Bo'yi: {self.height}"
+    def get_width(self):
+        return f"Eni: {self.width}"
+    def set_height(self):
+        yangi_boy = input("Yangi bo'yni kirting:  ")
+        self.height = yangi_boy
+        return f"Yangi bo'yi: {self.height}"
+    def set_width(self):
+        yangi_eni = input("Yangi enni kiriting:  ")
+        self.width = yangi_eni
+        return f"Yangi eni: {self,width}"
+    def get_area(self):
+        area = self.width * self.height
+        return area
+    def get_perimetr(self):
+        perimetr = (self.width + self.height) * 2
+        return perimetr
+    def get_info(self):
+        return f"Bo'yi: {self.height}\nEni: {self.width}"
+
+
+# num = Recentagle(5,20)
+# print(num.get_perimetr())
